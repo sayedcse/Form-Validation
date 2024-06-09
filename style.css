@@ -1,5 +1,222 @@
-* {
-    font-family: 'Tahoma', 'sans-serif';
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End Reset */
+:root {
+    /* color variables */
+    --primary-blue: #006ff0;
+    --secondary-orange: #ff9900;
+    --gray-dark: #777;
+    --white: #fff;
+    --white-body: #f9fafb;
+    --white-border: #f0f0f0;
+    --color-success: #3ecc71;
+    --color-error: #e74c3c;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--white-body);
+    font-family: 'Space Mono', 'serif';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: var(--white);
+    border-radius: 0.313rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.3);
+    width: 25rem;
+}
+h2 {
+    text-align: center;
+    margin: 0 0 1.25rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+.form {
+    padding: 1.875rem 2.5rem;
+}
+.form-control {
+    margin-bottom: 0.625rem;
+    padding-bottom: 1.25rem;
+    position: relative;
+}
+.form-control label {
+    color: var(--gray-dark);
+    display: block;
+    margin-bottom: 0.313rem;
+}
+.form-control input {
+    border: 0.125rem solid var(--white-border);
+    border-radius: 0.25rem;
+    padding: 0.625rem;
+    width: 100%;
+    font-size: 0.875rem;
+    display: block;
+}
+.form-control input:focus {
+    outline: 0;
+    /* border-color: #777; */
+    border-color: var(--secondary-orange);
+}
+.form-control.success input {
+    border-color: var(--color-success);
+}
+.form-control.error input {
+    border-color: var(--color-error);
+}
+.form-control small {
+    color: var(--color-error);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small {
+    visibility: visible;
+}
+.form button {
+    cursor: pointer;
+    background-color: var(--primary-blue);
+    border: 0.125rem solid var(--primary-blue);
+    border-radius: 0.25rem;
+    color: var(--white);
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    padding: 0.675rem;
 }
