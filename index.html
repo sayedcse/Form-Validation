@@ -7,7 +7,45 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>Hello World</h1>
+        <main class="container">
+            <form id="form" class="form">
+                <!-- UserName Input field -->
+                <fieldset class="form-control">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter Username"
+                    />
+                    <small>Error Message</small>
+                </fieldset>
+                <!-- Email Input Field -->
+                <fieldset class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email" />
+                    <small>Error Message</small>
+                </fieldset>
+                <!-- Password input field -->
+                <fieldset class="form-control">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter password"
+                    />
+                    <small>Error Message</small>
+                </fieldset>
+                <fieldset class="form-control">
+                    <label for="password-2">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="password-2"
+                        placeholder="Enter password again"
+                    />
+                    <small>Error Message</small>
+                </fieldset>
+            </form>
+        </main>
 
         <script src="script.js"></script>
     </body>
